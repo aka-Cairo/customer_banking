@@ -1,5 +1,7 @@
 # Import the create_cd_account and create_savings_account functions
 # ADD YOUR CODE HERE
+from cd_account import create_cd_account
+from savings_account import create_savings_account
 
 # Define the main function
 def main():
@@ -9,6 +11,9 @@ def main():
     """
     # Prompt the user to set the savings balance, interest rate, and months for the savings account.
     # ADD YOUR CODE HERE
+    savings_balance = float(input("Enter the initial savings account balance: "))
+    interest_rate = float(input("Enter the APR interest rate for the savings account: "))
+    months = int(input("Enter the length of months to determine the amount of interest: "))
 
     # Call the create_savings_account function and pass the variables from the user.
     updated_savings_balance, interest_earned = create_savings_account(savings_balance, savings_interest, savings_maturity)
@@ -27,3 +32,4 @@ def main():
 
 if __name__ == "__main__":
     # Call the main function.
+p
